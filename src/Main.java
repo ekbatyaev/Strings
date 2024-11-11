@@ -19,7 +19,7 @@ public class Main {
                 System.out.print(divided_username[0] + " " + divided_username[1].charAt(0)
                         + "." + divided_username[2].charAt(0) + ".");
                 if (divided_username[2].charAt(divided_username[2].length() - 1) == 'а') {System.out.print(" Пол: Ж, ");}
-                else if (divided_username[2].matches("[\\p{L}| ]+")){System.out.print(" Пол: М, ");}
+                else if (divided_username[2].charAt(divided_username[2].length() - 1) == 'ч'){System.out.print(" Пол: М, ");}
                 else {System.out.print("Определить не удалость");}
                 LocalDate birthday = LocalDate.of(Integer.parseInt(divided_date[2]),Integer.parseInt(divided_date[1]), Integer.parseInt(divided_date[0]));
                 LocalDate now = LocalDate.now();
